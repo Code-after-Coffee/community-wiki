@@ -18,7 +18,7 @@ for the community
     6. [rebase](./git-commands/rebase.md): Managing commit history of local repositories
     7. [cherry-pick](./git-commands/cherry-pick.md): Adding specific pre-commited changes to local repositories
 
-2. Git Commit Guidelines
+2. Git Commit Guidelines: This section goes over the community's git commiting guidelines. The community follows the Conventional Commits guidelines found here: https://www.conventionalcommits.org/en/v1.0.0/
     1. [feat](./git-commits/feat.md): Implemented a new feature
     2. [fix](./git-commits/fix.md): Fixed an existing feature
     3. [refactor](./git-commits/refactor.md): Refactoring existing code 
@@ -30,15 +30,15 @@ for the community
     9. [test](./git-commits/test.md): Testing of exisiting code
     10. [Breaking Change (!)](./git-commits/breaking.md): If new changes breaks existing application infrastructure
 
-3. Code Stylers/Linters
-    1. [Eclipse](./code-style/eclipse.md)
-    2. ESLint
+3. Code Stylers/Linters: This section goes over code stylers and linters that have been configured and set up for the community
+    1. [Eclipse](./code-style/eclipse.md): Code styler for the Eclipse IDE
+    2. ESLint: Code linter for Javascript/Typescript
 
-4. Development Operations
-    1. [Domain](./devops/domain.md)
-    2. Development VM
+4. Development Operations: This section covers different development operation related resources and documentation
+    1. [Domain](./devops/domain.md): Domains owned by the community and what applications are pointed to by those domains
+    2. Development VM: Virtual machines hosted by the community and what purpose they serve
 
-5. Useful Tools/Technologies
-    1. [Docker](./tools/docker.md)
+5. Useful Tools/Technologies: This section covers useful tools and technologies that the community can learn/use during the development of projects
+    1. [Docker](./tools/docker.md): Overview of docker which allows for the containerization of applications to improve sharability and distribution
 
 
