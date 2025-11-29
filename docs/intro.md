@@ -10,7 +10,16 @@ for the community
 ## Sections
 
 1. Github Guidelines: This section is dedicated to introducing Github and describing basic tools/functions of the site in relation to contributing to community projects.
-    1. [fork](./github-guidelines/fork.md): Forking a repository which creates a copy of the exisiting repo under your own Github account
+    1. [Organization](./github-guidelines/organization.md): Description of the Github organization and how to join
+    2. [Fork](./github-guidelines/fork.md): Forking a repository which creates a copy of the exisiting repo under your own Github account
+    3. [Branches](./github-guidelines/branches.md): Description of the desired branching structure for organization/forked repos
+    4. [Issues](./github-guidelines/issues.md): Guidelines for creating and responding to Github issues
+    5. [PRs](./github-guidelines/pull-requests.md): Guidelines for creating and addressing pull requests in Github
+    6. [Actions](./github-guidelines/actions.md): Guidelines for managing Github actions in addition to commonly used actions
+    7. [Projects](./github-guidelines/projects.md): Guidelines for interacting with and managing Github projects
+    8. [Rulesets](./github-guidelines/rulesets.md): How to manage rulesets for repositories and what rules should be included
+    9. [SSH](./github-guidelines/ssh-keys.md): How to set up a SSH key for use when interacting with Github
+    10. [GPG](./github-guidelines/gpg-keys.md): How to set up a GPG key for signing commits
 
 2. Git Commands: This section is dedicated to outlining useful git commands that will come up in the development process
     1. [remote](./git-commands/remote.md): Manage connections between local git and remote repositories (Github)
