@@ -24,14 +24,15 @@ for the community
 3. Git Commit Guidelines: This section goes over the community's git commiting guidelines. The community follows the Conventional Commits guidelines found here: https://www.conventionalcommits.org/en/v1.0.0/
     1. [feat](./git-commits/feat.md): Implemented a new feature
     2. [fix](./git-commits/fix.md): Fixed an existing feature
-    3. [refactor](./git-commits/refactor.md): Refactoring existing code 
-    4. [docs](./git-commits/docs.md): Documentation about existing code
-    5. [chore](./git-commits/chore.md): Chores related to the management of the code
-    6. [build](./git-commits/build.md): Changes to the build process of the code
-    7. [ci](./git-commits/ci.md): Changes to client interaction of the code
-    8. [style](./git-commits/style.md): Changes to the styling of code
-    9. [test](./git-commits/test.md): Testing of exisiting code
-    10. [Breaking Change (!)](./git-commits/breaking.md): If new changes breaks existing application infrastructure
+    3. [perf](./git-commits/perf.md): Changes to the code that aim to improve the performance
+    4. [refactor](./git-commits/refactor.md): Refactoring existing code where no changes to behavior are made
+    5. [docs](./git-commits/docs.md): Documentation about existing code
+    6. [chore](./git-commits/chore.md): Chores related to the management of the code
+    7. [build](./git-commits/build.md): Changes to the build process of the code
+    8. [ci](./git-commits/ci.md): Changes to the CI/CD of the code
+    9. [style](./git-commits/style.md): Changes to the styling of code
+    10. [test](./git-commits/test.md): Testing of exisiting code
+    11. [Breaking Change (!)](./git-commits/breaking.md): If new changes breaks existing application infrastructure
 
 4. Code Stylers/Linters: This section goes over code stylers and linters that have been configured and set up for the community
     1. [Eclipse](./code-style/eclipse.md): Code styler for the Eclipse IDE
