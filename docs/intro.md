@@ -28,10 +28,11 @@ for the community
     4. [checkout](./git-commands/checkout.md): Create/Switch between branches
     5. [fetch](./git-commands/fetch.md): Fetching changes from remote repositories
     6. [pull](./git-commands/pull.md): Pulling changes from remote repositories to local repositories
-    7. [push](./git-commands/push.md): Pushing changes from local repositories to remote repositories
-    8. [rebase](./git-commands/rebase.md): Managing commit history of local repositories
-    9. [cherry-pick](./git-commands/cherry-pick.md): Adding specific pre-commited changes to local repositories
-    10. [stash](./git-commands/stash.md): Save un-pushed changes and remove them from current local branch to be moved to another branch
+    7. [commit](./git-commands/commit.md): Formaly save changes in the local repository
+    8. [push](./git-commands/push.md): Pushing changes from local repositories to remote repositories
+    9. [rebase](./git-commands/rebase.md): Managing commit history of local repositories
+    10. [cherry-pick](./git-commands/cherry-pick.md): Adding specific pre-commited changes to local repositories
+    11. [stash](./git-commands/stash.md): Save un-pushed changes and remove them from current local branch to be moved to another branch
 
 3. Git Commit Guidelines: This section goes over the community's git commiting guidelines. The community follows the Conventional Commits guidelines found here: https://www.conventionalcommits.org/en/v1.0.0/
     1. [feat](./git-commits/feat.md): Implemented a new feature
