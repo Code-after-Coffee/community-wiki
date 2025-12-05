@@ -1,6 +1,6 @@
 {
   "label": "Git Commands",
-  "position": 3,
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Useful commands used to interact with git repositories"
