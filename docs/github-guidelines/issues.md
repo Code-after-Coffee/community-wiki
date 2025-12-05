@@ -6,6 +6,8 @@ sidebar_position: 4
 
 Github issues tasks created in relation to the current project and aim to give direction into what features/bugs are planned for the current version of the project.
 
+## Overview of an issue
+
 Github issues contain the following information to describe the type of task that the issue aims to accomplish:
 
 - `Title`: A simple to read title of what the issue aims to resolve
@@ -33,3 +35,13 @@ Github issues contain the following information to describe the type of task tha
 Example issue created for the Community Wiki project:
 
 ![Example of a Github issue](../../static/img/github-guidelines-issues-01.png)
+
+## Navigating issues
+
+When navigating the issues section of a Github repository you will see a list of open issues organized from newest to oldest as you go down the list.
+
+From this list you can see the title of each issue which gives a short explanation of it, if there is anyone assigned to the issue on the right hand side of the issue card, and if there are any pull requests currently open that aim to resolve the issue.
+
+You can see a more detailed version of the issue by selecting one of these items where discussions related to the issue can be discussed along with requesting that the issue be assinged to a specific user for implementation.
+
+![Example list of Github issues](../../static/img/github-guidelines-issues-02.png)
