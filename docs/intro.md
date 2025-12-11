@@ -9,7 +9,7 @@ for the community
 
 ## Sections
 
-1. [Quick Start Guide](./quick-start.md): A simple guide that shows from start to end the process of making your first contribution to a community project
+1. [Quick Start Guide](./quick-start.mdx): A simple guide that shows from start to end the process of making your first contribution to a community project
 
 2. [Github Guidelines](/docs/category/github-guidelines): This section is dedicated to introducing Github and describing basic tools/functions of the site in relation to contributing to community projects.
     <!-- 1. [Organization](./github-guidelines/organization.md): Description of the Github organization and how to join
