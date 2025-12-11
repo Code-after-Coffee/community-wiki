@@ -1,0 +1,135 @@
+---
+sidebar_position: 2
+---
+
+import cloningVideo from '../static/video/quick-start-clone.mp4';
+import addRemoteLinkVideo from '../static/video/quick-start-remote-links.mp4'
+import selectIssueVideo from '../static/video/quick-start-select-issue.mp4'
+import createBranchVideo from '../static/video/quick-start-create-branch.mp4'
+import publishBranchVideo from '../static/video/quick-start-publish-branch.mp4'
+import commitVideo from '../static/video/quick-start-make-commit.mp4'
+import pushChangesVideo from '../static/video/quick-start-push-change.mp4'
+import pullRequestVideo from '../static/video/quick-start-create-pr.mp4'
+import updateRefsVideo from '../static/video/quick-start-update-refs.mp4'
+import pullChangesVideo from '../static/video/quick-start-pull-changes.mp4'
+import updateForkVideo from '../static/video/quick-start-update-forked-main.mp4'
+
+# Quick Start Guide
+
+Making your first contribution can be a daunting task however, this guide aims to give a clear and simple process that can be followed when making your first contribution.
+
+## Forking a community repo
+
+The first step of any contribution is to fork the original organization repo as outlined in the [Creating a fork](/docs/github-guidelines/fork#creating-a-fork) section of this wiki. During this process you will create your own personal copy of the organization's repo where changes can be made before being merged into the organization's repo.
+
+<!-- TODO: Add video of forking -->
+
+## Cloning the forked repo
+
+After forking the repository you will need to clone the repo onto your own machine as a local Git repository by using the Git [clone](./git-commands/clone.md) command. This can be done by using the command in the desired directory on your local machine that you want the local copy of the forked repository to be placed where the `git-name` is the name obtained from the forked repo when selecting the `Code` icon as outlined in the Git [clone](./git-commands/clone.md) command documentation.
+
+<video controls muted>
+<source src={cloningVideo}/>
+</video>
+
+## Ensuring all remote links are established
+
+Once the forked repo has been cloned to your local machine it is best to ensure that all remote links are present and already set up and add them if they are not there using the Git [remote](./git-commands/remote.md) command. At minimum the origin repo (your forked repo) and the upstream repo (the organization's repo) are present as remote links with your local machine's git repo.
+
+NOTE: Usually the origin repo and upstream remote links should already be set up if the repo was forked and cloned correctly but additional documenation is present below in the case that either are missing.
+
+### Check remote links
+
+```
+git remote -v
+origin  git@github.com:RobertForristall/community-wiki.git (fetch)
+origin  git@github.com:RobertForristall/community-wiki.git (push)
+upstream        git@github.com:Code-after-Coffee/community-wiki.git (fetch)
+upstream        git@github.com:Code-after-Coffee/community-wiki.git (push)
+```
+
+### Add missing remote link
+
+<video controls muted>
+<source src={addRemoteLinkVideo}/>
+</video>
+
+## Selecting an issue
+
+Now with the Git framework set up to interact with the repo it is time to select an issue that you will contribute to in order to resolve it. Issues can be found in the issues section of Github as described in the [Navigating issues](/docs/github-guidelines/issues#navigating-issues) of this wiki where you can begin to learn about the current items that need work to be done on them. For a first contribution it is recommended to filter labels to look for issues that are good for first time contributors such as those labeled with `good first issue`. Once you find an issue you would like to work on simply request that you be assigned the issue as to ensure that no one else will be working on it while you are performing your contribution.
+
+<video controls muted>
+<source src={selectIssueVideo}/>
+</video>
+
+## Creating the issue branch
+
+Once you have selected an issue that you are assigned to complete then it is time to create a branch in your forked repository that will house all of the changes needed to resolve that issue. The branch is created using the Git [checkout](/docs/git-commands/checkout#create-a-new-branch) and should be named based on the naming conventions described in the Github guidelines [branches](./github-guidelines/branches.md) documentation with the format `<issue-number>-<issue-description>`.
+
+<video controls muted>
+<source src={createBranchVideo}/>
+</video>
+
+## Publish the new issue branch
+
+With a new branch for the assigned issue created in your forked local repository you must publish the branch to your forked remote repository and link it to your local repo using the Git [push](/docs/git-commands/push#push-a-new-branch-with-its-commits) command along with the `-u` flag setting the newly published remote branch as the upstream branch that the local branch tracks against.
+
+<video controls muted>
+<source src={publishBranchVideo}/>
+</video>
+
+## Complete task associated with chosen issue
+
+Now that all of the set up for resolving an issue are complete it is finally time to begin making changes. Begin working on the issue making sure that changes are made in a modular manner as mentioned in the [Good Commits](./git-commits/good-commits.md) documentation to ensure that good commits can be made reflecting the changes.
+
+## Commiting changes
+
+Whenever a modular change is made to the project that is ready to commit then follow the Git [commit](./git-commands/commit.md) documentation along with the [Git Commit Guidelines](/docs/category/git-commit-guidelines) section to determine what tag should be included with the commit to ensure that any needed pipelines are run in addition to improving the ability for code reviews to be done on the commit at a later stage.
+
+<video controls muted>
+<source src={commitVideo}/>
+</video>
+
+## Pushing the changes
+
+Once changes have been commited and it is time to push them to the forked remote repository then use the Git [push](./git-commands/push.md) command to push them to the forked remote repository from your local forked repository.
+
+<video controls muted>
+<source src={pushChangesVideo}/>
+</video>
+
+## Making a pull request
+
+When all changes are made in order to satisfy the requirements of the issue it is time to make a pull request that will request for your changes in your forked remote repository issue branch to be merged into the source remote repository development or main branch (depending on the type of issue and stage of development in the project). For this stage follow the guidelines outlined in [Pull Requests](./github-guidelines/pull-requests.md) documentation to make a good pull request and prepare for handling code review.
+
+<video controls muted>
+<source src={pullRequestVideo}/>
+</video>
+
+## Responding to code review
+
+After you make your pull request you must wait for an approved reviewer to review the changes you made for the pull request and give feedback on those changes. In some situations there will be no further changes needed and the pull request will be merged by the approved reviewer/owner of the source repository. In other situations some additional changes may need to be made; in this case refer to the [Reviewing A Pull Request](/docs/github-guidelines/pull-requests#reviewing-a-pull-reques) documentation for how to handle the changes that may be requested of you.
+
+## Update references of upstream branch on local repo
+
+Whenever the code review is completed and your changes have been merged it is time to update everything on your forked repo starting with a Git [fetch](./git-commands/fetch.md) to pull the references of the changes from the remote source repository to your local forked repository. From here you can begin pulling those changes to your local repo and pushing them to your remote forked repository.
+
+<video controls muted>
+<source src={updateRefsVideo}/>
+</video>
+
+## Pull merged changes to local repo main
+
+With the fetch being completed it is time to pull those new changes to your local repository in order to maintain consistency between the upstream repo and your local repository. To do this perform the Git [pull](./git-commands/pull.md) from the source remote reposiotory development/main branch into your own local repository.
+
+<video controls muted>
+<source src={pullChangesVideo}/>
+</video>
+
+## Updating forked repo main
+
+Finally to complete your first contribution update the forked remote repository repo with any changes that have been merged into the source remote repository. Using the pulled changes into your local repository from the previous step; use the Git [push](./git-commands/push.md) command to push those updates to your forked remote repository to ensure that everything is in sync with the current changes applied to the source remote repository and prepare for the next contribution you will make to the project.
+
+<video controls muted>
+<source src={updateForkVideo}/>
+</video>
